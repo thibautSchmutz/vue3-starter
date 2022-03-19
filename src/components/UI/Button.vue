@@ -8,10 +8,10 @@ const username = ref('');
 
 <template>
   <div>
-    <div class="mb-4">
-      <label class="label" for="username"> Username </label>
+    <div class="button">
+      <label class="button-label" for="username"> Username </label>
       <input
-        class="input"
+        class="button-input"
         v-model="username"
         id="username"
         type="text"
@@ -24,11 +24,15 @@ const username = ref('');
   </div>
 </template>
 
-<style>
-.label {
-  @apply block text-gray-700 text-sm font-bold mb-2;
-}
-.input {
-  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none;
+<style lang="scss">
+.button {
+  @apply mb-4
+  
+  &-label {
+    @apply block text-gray-700 text-sm font-bold mb-2;
+  }
+  &-input {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none;
+  }
 }
 </style>
