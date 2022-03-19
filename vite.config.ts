@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitest/config';
+import path from 'path';
 import vue from '@vitejs/plugin-vue';
 import WindiCSS from 'vite-plugin-windicss';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue(), WindiCSS()],
   server: {
@@ -10,6 +10,15 @@ export default defineConfig({
     host: '0.0.0.0',
     watch: {
       usePolling: true,
+    },
+  },
+  resolve: {
+    alias: {
+      '@components': `${path.resolve(__dirname, 'src/components')}`,
+      '@views': `${path.resolve(__dirname, 'src/views')}`,
+      '@store': `${path.resolve(__dirname, 'src/store')}`,
+      '@assets': `${path.resolve(__dirname, 'src/assets')}`,
+      '@composables': `${path.resolve(__dirname, 'src/composables')}`,
     },
   },
   test: {
