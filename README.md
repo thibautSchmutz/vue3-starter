@@ -17,3 +17,9 @@
 ```bash
   yarn reboot
 ```
+
+### Launch tests
+
+```bash
+  yarn test
+```
