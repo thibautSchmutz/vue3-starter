@@ -1,9 +1,15 @@
 # Project with Vue3 - Vite - Typescript - Pinia - WindiCSS
 
-### Launch the app
+### Pull Docker images
 
 ```bash
-  yarn images && yarn up
+  yarn images
+```
+
+### Run container and launch dev server
+
+```bash
+  yarn up
 ```
 
 ### Kill container
@@ -12,13 +18,13 @@
   yarn down
 ```
 
-### Relaunch the app
+### Rerun the app
 
 ```bash
   yarn reboot
 ```
 
-### Launch tests
+### Run tests
 
 ```bash
   yarn test
