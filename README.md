@@ -1,4 +1,16 @@
-# Project with Vue3 - Vite - Typescript - Pinia - WindiCSS
+# The Project
+
+Boilerplate project project to help strat new project that include :
+
+- docker
+- vite
+- vue3
+- typescript
+- pinia
+- vitest (and vue test utils)
+- saas
+- windiCSS
+- eslint/prettier
 
 ### Pull Docker images
 
@@ -18,7 +30,7 @@
   yarn down
 ```
 
-### Rerun the app
+### Reboot the app
 
 ```bash
   yarn reboot
@@ -28,4 +40,10 @@
 
 ```bash
   yarn test
+```
+
+### Access container's shell
+
+```bash
+  yarn shell
 ```
