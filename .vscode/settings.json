@@ -2,5 +2,9 @@
   "scss.lint.unknownAtRules": "ignore",
   "css.lint.unknownAtRules": "ignore",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  // WINDI CSS
+  "editor.quickSuggestions": {
+    "strings": true
+  }
 }
